@@ -1,0 +1,9 @@
+services:
+  browser-mcp:
+    build: .
+    container_name: browser-mcp-server
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
