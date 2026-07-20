@@ -16,9 +16,14 @@ The Browser MCP Server allows an LLM to navigate the web, extract content, and p
 - **Web Search:** Built-in integration with DuckDuckGo for searching the web.
 - **Ad Blocking:** Pre-configured with uBlock (via Chromium extension loading).
 
-## How to Run
+## Usage (Docker Hub)
+You can pull and run the pre-built image directly from Docker Hub (amd64 and arm64):
 
-### Using Docker Compose
+```bash
+docker run -p 8000:8000 --rm catinbeard/browser-mcp:latest
+```
+
+## Using Docker Compose
 1. Start the server:
    ```bash
    docker-compose up -d
